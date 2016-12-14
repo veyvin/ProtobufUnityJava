@@ -1,0 +1,26 @@
+syntax = "proto3";
+package protobuf;
+option java_package="com.sgcc.bochao.ggt.manage.protobuf";
+option java_outer_classname="ResData";
+
+message ResSSS{
+repeated Res res = 1;
+}
+
+message Res{
+string ResType = 1;
+string ResName = 2;
+string ResCost = 3;
+string ResUnit = 4;
+string ResModelName = 5;
+string ResPicName = 6;
+string ResABName = 7;
+string ResSltABName = 8;
+string ResAddTime = 9;
+string ResAddMan = 10;
+string ResUpTime = 11;
+string ResUpMan = 12;
+bytes ResModel = 13;
+bytes ResPic = 14;
+string ResGuid = 15;
+}
